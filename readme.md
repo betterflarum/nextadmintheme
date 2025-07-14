@@ -1,5 +1,5 @@
 
-# BetterFLarum - Next Admin UI v2
+# BetterFLarum - Next Admin UI V3 (New Update)
 The NEXT Flarum Admin theme by fanmade. Revise the original admin dashboard
 
 ## First Look
