@@ -3,7 +3,8 @@
 The NEXT Flarum Admin theme by fanmade. Revise the original admin dashboard
 
 ## First Look
-![i]([https://betterflarum.s3.us-west-004.backblazeb2.com/button2.mp4](https://f004.backblazeb2.com/b2api/v1/b2_download_file_by_id?fileId=4_zf8d76a3c817bf8c99273091c_f11345a6e1ac81b4a_d20250715_m114501_c004_v0402031_t0047_u01752579901248))
+[👉 Watch the demo on YouTube](https://youtu.be/6N-Xim-2280)
+![i](https://f004.backblazeb2.com/file/betterflarum/Next+Admin+UI+-+Light+theme+0-6+screenshot.png)
 
 - New liquid glass UI
 - Redesign Flarum admin dashboard interface
@@ -13,15 +14,19 @@ The NEXT Flarum Admin theme by fanmade. Revise the original admin dashboard
 And more tweaks. Explore itself !
 
 ## New Liquid buttons
-![i](https://betterflarum.s3.us-west-004.backblazeb2.com/button2.mp4)
-![i](https://betterflarum.s3.us-west-004.backblazeb2.com/button.mp4)
+[👉 Watch the demo on YouTube](https://youtu.be/xmimJp7Ylic)
+[👉 Watch the demo on YouTube](https://youtu.be/iip86Mv400A)
+![i](https://f004.backblazeb2.com/file/betterflarum/button2.png)
+![i](https://betterflarum.s3.us-west-004.backblazeb2.com/button1.png)
 
 ## New Pop-ups design
-![i](https://betterflarum.s3.us-west-004.backblazeb2.com/popup.mp4)
+[👉 Watch the demo on YouTube](https://youtu.be/jAQGOGnzhhk)
+![i](https://betterflarum.s3.us-west-004.backblazeb2.com/popup.png)
 
 ## Support Dark UI
 - Support FoF Night Mode
-![i](https://betterflarum.s3.us-west-004.backblazeb2.com/dark.mp4)
+[👉 Watch the demo on YouTube](https://youtu.be/k-RjYxrvJKI)
+![i](https://betterflarum.s3.us-west-004.backblazeb2.com/dark.png)
 
 ## Compatible
 - Friendly both Desktop / Mobile!
