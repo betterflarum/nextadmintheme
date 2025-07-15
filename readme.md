@@ -3,7 +3,7 @@
 The NEXT Flarum Admin theme by fanmade. Revise the original admin dashboard
 
 ## First Look
-![i](https://betterflarum.s3.us-west-004.backblazeb2.com/1.mp4)
+https://betterflarum.s3.us-west-004.backblazeb2.com/popup.mp4
 
 - New liquid glass UI
 - Redesign Flarum admin dashboard interface
