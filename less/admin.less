@@ -12,53 +12,62 @@
         /* REPLACE YOUR BACKGROUND IMAGE LINK BELLOW, RECOMMENDED PASTE THE SQUARE HIGH QUALITY IMAGE URL */
          background: no-repeat center / cover url(https://4kwallpapers.com/images/wallpapers/windows-11-landscape-scenery-sunset-stock-night-6400x4000-5670.jpg) !important;
     }
+
+:root {
+--muted-color: var(--text-color) !important;
+--control-color: var(--text-color) !important;
+--button-color: var(--text-color) !important;
+--control-color: var(--text-color) !important;
+}
  @media (min-width:961px) {
     /* CORE (I have heard this and it is really true: If the codes working fine, dont touch it.*/
-    
- .AuditPage .ExtensionPage-header .AuditUpgrade {
+  
+
+    .App-nav .AdminNav .Dropdown-menu>li .Search-input{
+        max-width: 90% !important;
+    }
+  #app.App.affix.scrolled   .App-nav .AdminNav .Dropdown-menu>li .SearchBar {
+        color: black;
+    }
+ .AuditPage .ExtensionPage-header .AuditUpgrade{
         display:none!important
     }
+        .App-nav .AdminNav .Dropdown-menu>li .SearchBar {
+        max-width: 100% !important;
+        text-align: center;
+        border: none !important;
+        font-size: larger;
+        border-radius: 30px !important;
+    }
+#app.App.affix.scrolled .App-nav .AdminNav .Dropdown-menu>li.active>a {
+    width: 96%;
+}
+.App-nav .AdminNav .Dropdown-menu>li.active>a {
+    color: #000 !important;
+    border-left: 5px solid #e56232;
+    transition: .3s border-left;
+}
+ .ExtensionPage-header h2 {
+    left: -4px !important;
+}
+
     .App {
     --admin-pane-width: 35% !important;
 }
     .App-nav {
         scrollbar-width: none;
     }
-  .AlertManager-alert  span.Alert-body::after {
-    content: "New Notification";
-    position: absolute;
-    left: 6.4rem;
-    top: 25%;
-    font-weight: 100;
-    font-size: small;
+  
+.DashboardPage, .PermissionsPage-groups {
+    background: transparent!important;
 }
 
-.Alert-controls>li>.Button {
-    vertical-align: super !important;
-    color: white !important;
-}
-    .AlertManager .Alert {
-        animation: .5s slide-in;
-        bottom: 0 !important;
-        background: #00000070 !important;
-        backdrop-filter: blur(12px);
-        font-size: large !important;
-        padding: 6% 1rem 6% 0% !important;
-        font-weight: 600;
-    }
-   .AlertManager-alert span.Alert-body::before {
-    content: "\";
-    font-family: 'Font Awesome 6 Free';
-    background: #ffffff42;
-    padding: 1.3rem;
-    margin: 0 1rem;
-    border-radius: 16px;
-    font-size: 2rem;
-}
+
+
            .ExtensionPage-headerItems::after {
         content: "\f103";
         font-size: 2rem;
-        font-family: 'Font Awesome 6 Free';
+        font-family: 'Font Awesome 5 Free';
         font-weight: 800;
         color: var(--button-color);
         margin: 10% 0 0;
@@ -80,34 +89,12 @@
          font-weight: 900;
          font-size: 24px;
     }
-     .App-nav .AdminNav .Dropdown-menu>li.active>a {
-         color: #fff !important;
-         border-left: 5px solid #e56232;
-         background: transparent !important;
-         transition: .3s border-left;
-         border-radius: 0;
-    }
+
     
      .scrolled .App-header a.Button.Navigation-back.Button--icon.hasIcon {
          background: transparent !important;
          color: white !important;
          padding: 6px;
-    }
-        div#header-navigation::after {
-        content: "NEXT Admin UI v3";
-        font-weight: 100;
-        color: var(--header-colored-control-color, #fff);
-        padding-left: 10px;
-        font-size: 20px;
-        vertical-align: middle;
-    }
-         #app.App.affix.scrolled div#header-navigation::after {
-        content: "NEXT Admin UI v3";
-        font-weight: 100;
-        color:white;
-        padding-left: 10px;
-        font-size: 20px;
-        vertical-align: middle;
     }
      .FormControl {
          border-radius: 1rem !important;
@@ -422,21 +409,16 @@ color: #fff;
     }
 }
  body when (@config-dark-mode = false) {
-     .App-nav .AdminNav .Dropdown-menu>li.active>a {
-         color: #000 !important;
-         border-left: 5px solid #e56232;
-         background: transparent !important;
-         transition: .3s border-left;
-         border-radius: 0;
-    }
+
      .App-navigation {
          background: #ffffff8f;
          backdrop-filter: blur(5px);
-         height: 4rem !important;
+-webkit-backdrop-filter: blur(8px);
     }
 div#content {
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(8px);
     padding-bottom: 30px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -450,6 +432,7 @@ div#content {
     
          div#content {
          backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(8px);
          padding-bottom: 30px;
          background: #00000099;
 box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -457,7 +440,7 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
      .App-navigation {
          background: #00000050;
          backdrop-filter: blur(5px);
-         height: 4rem !important;
+-webkit-backdrop-filter: blur(8px);
     }
      .App-titleControl>.Button {
          font-size: 19px !important;
@@ -474,7 +457,6 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
 
      .App-nav .AdminNav .Dropdown-menu>li.active>a {
          color: #fff !important;
-         border-left: 5px solid #e56232;
          background: transparent !important;
          transition: .3s border-left;
     }
@@ -519,6 +501,22 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
          backdrop-filter: blur(10px) !important;
          background: #00000070 !important;
     }
+
+.App-content {
+    border-top: none !important;
+}
+    .App-titleControl .Dropdown-menu {
+    box-shadow: none !important;
+}
+.App-nav .AdminNav .Dropdown-menu>li .SearchBar {
+    max-width: 100% !important;
+    text-align: center;
+    box-shadow: none;
+    border: none !important;
+    font-size: larger;
+    border-radius: 30px !important;
+
+}
         .App {
         padding: 10px;
         border-radius: 30px;
@@ -530,7 +528,7 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
     .Modal-content {
     background-color: black!important;
 }
-.DashboardPage, .ExtensionList-Category, .ExtensionsWidget-list {
+.DashboardPage, .ExtensionList-Category, .ExtensionsWidget-list, .PermissionsPage-groups {
     background: transparent !important;
 }
      li.item-extension-flarum-lang-vietnamese.active::after {
@@ -552,11 +550,12 @@ body div#content {
     border-radius: 30px;
 }
    body when (@config-dark-mode = false) {
-        .Dropdown .Dropdown-menu>li>a {
-        background: rgba(255, 255, 255, 0.61);
-        backdrop-filter: blur(3px);
+.Dropdown .Dropdown-menu>li>a {
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(1rem);
-        color: var(--text-color);
+        border-radius: 30px;
+        color: white;
     }
    }
      body when (@config-dark-mode = true) {
@@ -575,7 +574,7 @@ body div#content {
 }
      .Dropdown .Dropdown-menu>li>a {
         background: rgba(0, 0, 0, 0.15);
-        backdrop-filter: blur(3px);
+        backdrop-filter: blur(7px);
         -webkit-backdrop-filter: blur(3px);
         color: var(--text-color);
     }
@@ -630,9 +629,7 @@ display: block;
         overflow: auto;
     }
 
-.DashboardPage {
-    background: transparent!important;
-}
+
 .ExtensionsWidget-list {
     border-radius: 30px!important;
 }
@@ -640,11 +637,8 @@ display: block;
     .Navigation-back .icon {
     color: var(--text-color);
 }
-    #admin-navigation.App-nav.sideNav button.Dropdown-toggle.Button {
-        padding: 10% 0 !important;
-    }
+
         .affix .App-navigation {
-        width: 95%;
         justify-self: center;
         border-end-end-radius: 20px;
         border-end-start-radius: 20px;
@@ -680,15 +674,12 @@ display: block;
     backdrop-filter: blur(2px);
     background: linear-gradient(135deg, rgba(202, 202, 202, 0.59), rgba(255, 255, 255, 0.27)) !important;
     border: 1px solid rgba(217, 217, 217, 0.6) !important;
-    width: 96%;
     justify-self: anchor-center;
 }
      .App-nav .AdminNav .Dropdown-menu>li.active>a {
          border-radius: 30px;
     }
-     .App-nav .AdminNav li.active {
-         padding: 10px;
-    }
+
      .AdminHeader {
          background: transparent !important 
     }
@@ -801,9 +792,7 @@ display: block;
          content: "\f060" !important;
          color: white;
     }
-     #app-navigation.App-navigation .App-backControl>.Button--icon {
-         margin: 6px !important;
-    }
+  
      .AlertManager .Alert {
          animation: .5s slide-in;
          bottom: 0 !important;
@@ -816,7 +805,7 @@ display: block;
          min-height: 0 !important;
     }
      i.icon.fa.fa-fill-drip::after {
-         content: "V2";
+         content: "V3";
          font-family: sans-serif;
          font-size: 12px;
          display: block;
@@ -895,7 +884,6 @@ margin: 0;
     backdrop-filter: blur(2px);
 background: linear-gradient(135deg, rgba(202, 202, 202, 0.59), rgba(255, 255, 255, 0.27)) !important;
 border: 1px solid rgba(217, 217, 217, 0.6) !important;
-    width: 96%;
     justify-self: anchor-center;
     margin-top: 2%;
 }
@@ -930,7 +918,7 @@ border: 1px solid rgba(217, 217, 217, 0.6) !important;
 }
     .Modal-header h3::before {
         content: "\f14b";
-        font-family: 'Font Awesome 6 Free';
+        font-family: 'Font Awesome 5 Free';
         padding-inline-end: 10px;
     }
  .ExtensionsWidget-list .ExtensionList {
@@ -940,15 +928,7 @@ border: 1px solid rgba(217, 217, 217, 0.6) !important;
         .ExtensionListTitle, .ExtensionListItem-Dot.disabled {
             display: none !important;
         }
-#app.App.affix.scrolled li.item-extension-betterflarum-nextadmintheme.active  {
-    border-left: none !important;
-    border-radius: 30px;
-    backdrop-filter: blur(2px);
-background: linear-gradient(135deg, rgba(59, 48, 119, 0.59), rgba(126, 126, 126, 0.27)) !important;
-border: 1px solid rgba(217, 217, 217, 0.6) !important;
-    width: 96%;
-    justify-self: anchor-center;
-}
+
 #app.App.affix.scrolled  li.item-extension-flarum-lang-vietnamese.active::after {
     background-image: url(https://betterflarum.s3.us-west-004.backblazeb2.com/vn.png);
     content: "";
@@ -959,16 +939,6 @@ border: 1px solid rgba(217, 217, 217, 0.6) !important;
     top: -5.65rem;
     left: 18rem;
     background-size: 38%;
-    display: block;
-}
-.fa-chart-bar::before {
-    background-image: url(https://images.icon-icons.com/2699/PNG/512/flarum_logo_icon_168204.png);
-    content: "" !important;
-    width: 2rem;
-    height: 27px;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: 85%;
     display: block;
 }
  .fa-pencil-alt::before {
@@ -997,35 +967,81 @@ border: 1px solid rgba(217, 217, 217, 0.6) !important;
     color: #fff !important;
     border-left: none !important;
     border-radius: 30px;
-    width: 96%;
     justify-self: anchor-center;
     margin-top: 2%;
     transition: width .3s ease;
-    background: var(--header-colored-control-color) !important;
+    background: rgba(0, 0, 0, 0.12) !important;
 }
   #app.App.affix.scrolled .App-nav .AdminNav .Dropdown-menu>li.active>a {
     color: #fff !important;
     border-left: none !important;
     border-radius: 30px;
-    width: 96%;
     justify-self: anchor-center;
     margin-top: 2%;
     transition: width .3s ease;
-    background: transparent !important;
+background: rgba(255, 255, 255, 0.23) !important;
 }
     .App-nav .AdminNav .Dropdown-menu>li>a {
-        height: 5rem !important;
         align-content: center;
+margin: 5px 0;
     }
-        .App-nav .AdminNav .Dropdown-menu>li .SearchBar {
-        max-width: 100% !important;
-        text-align: center;
-        background: #00000017;
-        box-shadow: none;
-        border: none !important;
-        font-size: larger;
-        border-radius: 30px !important;
-    }
+
        #app.App.affix.scrolled  .App-nav .AdminNav .Dropdown-menu>li .SearchBar {
-        color: white !important;
+background: #fffffffa;
+    }
+    .App-nav .AdminNav .Dropdown-menu>li>a:hover {
+        border-radius: 30px;
+        justify-self: anchor-center;
+    }
+    .App-nav .AdminNav .Dropdown-menu>li .Button-icon {
+        margin-top: 3px !important;
+    }
+    .AppearancePage .Button {
+        width: 100% !important;
+    }
+    .Dropdown .Dropdown-menu>li>a:hover {
+        background: rgba(255, 255, 255, 0.25) !important;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(1rem);
+        border-radius: 30px;
+        color: white;
+    }
+
+.AlertManager-alert  span.Alert-body::after {
+    content: "New Notification";
+    position: absolute;
+    left: 6.4rem;
+    top: 25%;
+    font-weight: 100;
+    font-size: small;
+}
+.Alert-controls>li>.Button {
+    vertical-align: super !important;
+    color: white !important;
+}
+    .AlertManager .Alert {
+        animation: .5s slide-in;
+        bottom: 0 !important;
+color: white !important;
+        background: #00000070 !important;
+        backdrop-filter: blur(12px);
+        font-size: large !important;
+padding: 7% 1.5rem 7% 0% !important;
+        font-weight: 600;
+    }
+   .AlertManager-alert span.Alert-body::before {
+    content: "\";
+    font-family: 'Font Awesome 5 Free';
+    background: #ffffff42;
+    padding: 1.3rem;
+    margin: 0 1rem;
+    border-radius: 16px;
+    font-size: 2rem;
+}
+.App-titleControl>.Button .fa-sort:before {
+    content: "\" !important;
+}
+.Dropdown .Dropdown-menu {
+        border-radius: 30px !important;
+        transition: all .5s ease !important;
     }
